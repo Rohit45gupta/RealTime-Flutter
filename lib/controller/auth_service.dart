@@ -66,6 +66,7 @@ class Controller extends GetxController {
     }
   }
 
+
   Future<void> deleteData(String id) async {
     final data = await databaseReference.child(id).get();
     try {
