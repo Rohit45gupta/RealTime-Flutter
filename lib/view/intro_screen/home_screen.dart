@@ -116,17 +116,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                 const EdgeInsets.symmetric(horizontal: 25.0),
                             child: InkWell(
                               onTap: () {
-                                _deleteUserDialog(datas[index].userId);
+                                _deleteUserDialog(data.userId);
                               },
                               onLongPress: () {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => UpdateUserScreen(
-                                              name: datas[index].name,
-                                              userId: datas[index].userId,
-                                              age: datas[index].age,
-                                              gender: datas[index].gender,
+                                              name: data.name,
+                                              userId: data.userId,
+                                              age: data.age,
+                                              gender: data.gender,
                                             )));
                               },
                               child: Card(
